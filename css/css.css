@@ -1,0 +1,66 @@
+body,html{
+	margin:0;padding: 0
+}
+/*正方形*/
+.square { 
+width: 100px; 
+height: 100px; 
+background: red; 
+transition: all 2s;
+} 
+.square:hover{
+	transform: scale(1.5);
+}
+/*圆形*/
+.circle { 
+width: 100px; 
+height: 100px; 
+background: red; 
+-moz-border-radius: 50px; 
+-webkit-border-radius: 50px; 
+border-radius: 50px; 
+transition: all 2s;
+} 
+.circle:hover{
+	transform: rotateX(90deg);
+}
+/*椭圆*/
+.oval { 
+width: 200px; 
+height: 100px; 
+background: red; 
+-moz-border-radius: 100px / 50px; 
+-webkit-border-radius: 100px / 50px; 
+border-radius: 100px / 50px; 
+transition: all 2s;
+} 
+.oval:hover{
+	transform: translate(500px,0px);
+}
+/*三角形*/
+.triangle { 
+width: 0; 
+height: 0; 
+border-left: 50px solid transparent; 
+border-right: 50px solid transparent; 
+border-bottom: 100px solid red; 
+} 
+/*平行四边形*/
+.parallelogram { 
+width: 150px; 
+height: 100px; 
+margin:20px 0 0 20px; 
+-webkit-transform: skew(20deg); 
+-moz-transform: skew(20deg); 
+-o-transform: skew(20deg); 
+background: red; 
+} 
+/*梯形*/
+.trapezoid { 
+	margin:20px 0;
+border-bottom: 100px solid red; 
+border-left: 50px solid transparent; 
+border-right: 50px solid transparent; 
+height: 0; 
+width: 100px; 
+} 
